@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/intoProduct.css">
+    <!-- link fontawsome -->
+    <link href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- MENU -->
+    <div class="menu">
+        <a href="./index.html" style="text-decoration: none;"><p class="name glow">Coco</p></a>
+        <div class="search"> <input type="text" class="input" placeholder="Tìm sản phẩm của bạn">
+            <i class=" far fa-search"></i>
+        </div>
+        <div class="acount">
+            <a href="./acount.html"><i class="fal fa-user-alt"></i></a>
+            
+            <p for="" style="font-size: 20px; color: white; cursor: pointer; margin-top: 15px;" data-toggle="modal"data-target="#signIn">Sign In</p>
+            <p class="sign-up" data-toggle="modal"data-target="#signUp">Sign Up?</p>
+        </div>
+        <a href="./myShop.html"><i class="fal fa-shopping-cart"></i></a>
+    </div>
+    <!-- CONTAINER -->
+    <div class="container">
+        <div class="product">
+            <div class="owl-carousel owl-theme" style="width: 500px; height: 400px; margin-top: 20px;">
+                <div class="item"><img src="./img/toy/Capture.PNG" alt=""></div>
+                <div class="item"><img src="./img/toy/Capture15.PNG" alt=""></div>
+                <div class="item"><img src="./img/toy/Capture16.PNG" alt=""></div>
+                <div class="item"><img src="./img/toy/Capture17.PNG" alt=""></div>
+                <div class="item"><img src="./img/toy/Capture27.PNG" alt=""></div>
+            </div>
+            <div class="text">
+                <div class="name">Toy</div>
+                <div class="price">10$</div>
+
+                <button class="button">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- CONTAINER 2-->
+    <div class="container">
+        <div><p>Chi tiết sản phẩm</p></div>
+        <div><p>Mô tả sản phẩm</p></div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <button class="back-to-top" onclick="scrollToTop()">Back to top</button>
+        <div style="display: flex;">
+            <!-- footer left -->
+            <div class="footer-left">
+                <div class="child">
+                    <img class="location-icon" src="https://img.icons8.com/material/96/000000/worldwide-location--v1.png"/>
+                    <p>Ha Noi</p>
+                </div>
+                <div class="child">
+                    <img src="https://img.icons8.com/material-sharp/96/000000/phone.png"/>
+                    <p>+0383570323</p>
+                </div>
+                <div class="child">
+                    <img src="https://img.icons8.com/ios-filled/96/000000/apple-mail.png"/>
+                    <p>kieuduy947@gmail.com</p>
+                </div>
+            </div>
+    
+            <!-- footer right -->
+            <div class="footer-right">
+                <div><p>About the company</p></div>
+                <div class="all-icon">
+                    <img src="https://img.icons8.com/material-rounded/40/000000/facebook.png"/>
+                    <img src="https://img.icons8.com/material-rounded/40/000000/twitter.png"/>
+                    <img src="https://img.icons8.com/material-rounded/40/000000/instagram-new.png"/>
+                    <img src="https://img.icons8.com/material-rounded/40/000000/google-plus.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MODAL -->
+    <!-- Sign In Modal -->
+    <div id="signIn" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" style="text-align: center; font-size: 30px;">Sign In</h4>
+                </div>
+                <div style="display:block; padding: 15px 50px" class="modal-body">
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- Sign Up Modal -->
+    <div id="signUp" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" style="text-align: center; font-size: 30px;">Sign Up</h4>
+                </div>
+                <div style="display:block; padding: 15px 50px" class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Name</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Phone Number</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your number">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            animateOut: 'slideOutDown',
+            animateIn: 'flipInX',
+            items:1,
+            margin:30,
+            stagePadding:30,
+            smartSpeed:450
+        });
+    </script>
+    <script src="./scripts/localStorage.js"></script>
+    <script src="./scripts/scroll-top.js"></script>
+</body>
+</html>

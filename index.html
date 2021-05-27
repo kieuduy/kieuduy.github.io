@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Shop</title>
+    <!-- link fontawsome -->
+    <link href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css
+    " rel="stylesheet">
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sweetalert2.css">
+
+
+    <link rel="stylesheet" href="../OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <!-- MENU -->
+    <div class="menu">
+        <a href="./index.html" style="text-decoration: none;"><p class="name" style="text-decoration: none;">Coco</p></a>
+        <div class="search"> <input type="text" class="input" placeholder="Tìm sản phẩm của bạn">
+            <i class=" far fa-search"></i>
+        </div>
+        <div class="acount">
+            <a href="./acount.html"><i class="fal fa-user-alt"></i></a>
+            
+            <p id="si" for="" style="font-size: 20px; color: white; cursor: pointer; margin-top: 15px;" data-toggle="modal"data-target="#signIn">Sign In</p>
+            <p id ="su" class="sign-up" data-toggle="modal"data-target="#signUp">Sign Up?</p>
+        </div>
+        <a href="./cart.html"><i class="fal fa-shopping-cart"></i></a>
+    </div>
+
+    <!-- CONTAINER -->
+    <div class="container">
+        <div class="product">
+            <!-- Body left -->
+            <div class="body-left">
+                <div style="display: flex;">
+                    <i class="filter far fa-filter"></i>
+                    <p style="font-size: 35px;">Bộ lọc</p>
+                </div>
+                <div>
+                    <!-- Nơi bán -->
+                    <p class="category">Nơi bán</p>
+                    <input type="checkbox" class="check_Box">
+                    <label for="vehicle1">Hà Nội</label><br>
+
+                    <input type="checkbox" class="check_Box">
+                    <label for="vehicle1">Hồ Chí Minh</label><br>
+
+                    <input type="checkbox" class="check_Box">
+                    <label for="vehicle1">Đà Nẵng</label><br>
+
+                    <input type="checkbox" class="check_Box">
+                    <label for="vehicle1">Bình Dương</label><br>
+
+                    <input type="checkbox" class="check_Box">
+                    <label for="vehicle1">Hải Phòng</label><br>
+
+                    <input type="checkbox" class="check_Box">
+                    <label for="vehicle1">Khác</label><br>
+                    <!-- Tình trạng -->
+                    <p class="category">Tình trạng</p>
+                    <input type="checkbox" class="check_Box">
+                    <label for="vehicle1">Mới</label><br>
+
+                    <input type="checkbox" class="check_Box">
+                    <label for="vehicle1">Đã sử dụng</label><br>
+                    <!-- <img src="./img/laptop/152137-laptops-review-apple-macbook-pro-2020-review-image1-pbzm4ejvvs.jpg" alt=""> -->
+                    <!-- Khoản tiền -->
+                    <p class="category">Khoảng tiền</p>
+                    <form id="filterPrice">
+                        <input type="text" id="from" placeholder="$Từ" class="funds">
+                        <input type="text" id="to" placeholder="$Đến" class="funds">
+                        <button class="apply" type="submit">Áp dụng</button>
+                    </form>
+
+
+                </div>
+            </div>
+
+            <!-- Body right -->
+            <div class="body-right" id="body-right">
+                <p style="font-size: 40px;">Gợi ý cho bạn</p>
+                <div class="row" id="row">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <button class="back-to-top" onclick="scrollToTop()">Back to top</button>
+        <div style="display: flex;">
+            <!-- footer left -->
+            <div class="footer-left">
+                <div class="child">
+                    <img class="location-icon" src="https://img.icons8.com/material/96/000000/worldwide-location--v1.png"/>
+                    <p>Ha Noi</p>
+                </div>
+                <div class="child">
+                    <img src="https://img.icons8.com/material-sharp/96/000000/phone.png"/>
+                    <p>+0383570323</p>
+                </div>
+                <div class="child">
+                    <img src="https://img.icons8.com/ios-filled/96/000000/apple-mail.png"/>
+                    <p>kieuduy947@gmail.com</p>
+                </div>
+            </div>
+    
+            <!-- footer right -->
+            <div class="footer-right">
+                <div><p>About the company</p></div>
+                <div class="all-icon">
+                    <img src="https://img.icons8.com/material-rounded/40/000000/facebook.png"/>
+                    <img src="https://img.icons8.com/material-rounded/40/000000/twitter.png"/>
+                    <img src="https://img.icons8.com/material-rounded/40/000000/instagram-new.png"/>
+                    <img src="https://img.icons8.com/material-rounded/40/000000/google-plus.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MODAL -->
+    <!-- Sign In Modal -->
+    <div id="signIn" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" style="text-align: center; font-size: 30px;">Sign In</h4>
+                </div>
+                <div style="display:block; padding: 15px 50px" class="modal-body">
+                    <form id="signInModal">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="submit" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- Sign Up Modal -->
+    <div id="signUp" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" style="text-align: center; font-size: 30px;">Sign Up</h4>
+                </div>
+                <div style="display:block; padding: 15px 50px" class="modal-body">
+                    <form id="signUpModal">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Name</label>
+                            <input type="text" class="form-control" name="name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Phone Number</label>
+                            <input type="text" class="form-control" name="number" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your number">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDZh7_XKgFUFfCvU7LKxahWYLe3etTjKis",
+            authDomain: "coco-project-4c1f0.firebaseapp.com",
+            projectId: "coco-project-4c1f0",
+            storageBucket: "coco-project-4c1f0.appspot.com",
+            messagingSenderId: "107243514692",
+            appId: "1:107243514692:web:09027ffa8207db7b034511",
+            measurementId: "G-T31TSPVXDP"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="./scripts/sweetalert2.all.min.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/scroll-top.js"></script>
+    <script src="./scripts/cart.js"></script>
+    <script src="./scripts/filter.js"></script>
+</body>
+
+</html>
